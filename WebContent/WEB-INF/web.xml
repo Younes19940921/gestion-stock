@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>gestionproduit</display-name>
+	<servlet>
+	<servlet-name>cs</servlet-name>
+	<servlet-class>web.ProduitServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>cs</servlet-name>
+	<url-pattern>/produit</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>cc</servlet-name>
+	<servlet-class>web.StockServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>cc</servlet-name>
+	<url-pattern>/quantite</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>vs</servlet-name>
+	<servlet-class>web.VerifStockservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>vs</servlet-name>
+	<url-pattern>/verifstock</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>st</servlet-name>
+	<servlet-class>web.Statistiqueservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>st</servlet-name><url-pattern>/statistique</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

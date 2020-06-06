@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: gestionproduit
+Bundle-SymbolicName: gestionproduit
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: gestionproduit.jar,
+ Java/jdk1.8.0_231,
+ Java/jre1.8.0_231
+Export-Package: metier,
+ web
